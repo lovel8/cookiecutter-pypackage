@@ -17,6 +17,7 @@ classifiers = [
 
 ]
 license = {text = "{{cookiecutter.open_source_license}}"}
+requires-python = ">=3.12"
 dependencies = [
   {% if cookiecutter.command_line_interface.lower() == "typer" -%}
   "typer"
