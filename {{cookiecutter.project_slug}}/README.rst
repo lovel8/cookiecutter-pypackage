@@ -29,6 +29,22 @@
 * Documentation: https://{{ cookiecutter.project_slug | replace("_", "-") }}.readthedocs.io.
 {% endif %}
 
+
+Configure Pre-commit Hook
+LangManus includes a pre-commit hook that runs linting and formatting checks before each commit. To set it up:
+
+Make the pre-commit script executable:
+chmod +x pre-commit
+Install the pre-commit hook:
+ln -s ../../pre-commit .git/hooks/pre-commit
+The pre-commit hook will automatically:
+
+Run linting checks (make lint)
+Run code formatting (make format)
+Add any reformatted files back to staging
+Prevent commits if there are any linting or formatting errors
+
+
 Features
 --------
 
