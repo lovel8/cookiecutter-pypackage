@@ -29,7 +29,8 @@ dev = [
     "coverage",  # testing
     "mypy",  # linting
     "pytest",  # testing
-    "ruff"  # linting
+    "ruff",  # linting
+    "black",  # formatting
 ]
 
 [project.urls]
